@@ -15,15 +15,27 @@ import tkinter as tk
 
 root = tk.Tk()
 
-canvas = tk.Canvas(root, width=200, height=200, bg="#FF00FF");
+canvas = tk.Canvas(root, width=200, height=200, bg="#f63fff");
 canvas.grid()
-
+a = ""
+y = -15
 '''
 Text Rendering Example:
                     x    y                                                       
 canvas.create_text(100, 50, text="text goes here", font=("Arial", 16))
 '''
-# Put your code below
+# Put your code below\
+for i in range(4):
+    if i < (3):
+        a = "ice cream"
+        y = y + 50
+
+    else:
+        a = "banana"
+        y = y+ 50
+
+
+    canvas.create_text(100, y, text= a , font=("Arial", 16))
 
 
 root.mainloop()

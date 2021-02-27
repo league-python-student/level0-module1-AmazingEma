@@ -13,13 +13,16 @@ canvas.grid()
 
 
 # this code runs whenever the mouse is clicked on the window
-def mouse_pressed(event):
+if __name__ == '__main__':
+
     # Draws a dark blue background
-    canvas.create_rectangle(0, 0, window_width, window_height, fill="#000050")
+    #canvas.create_rectangle(0, 0, window_width, window_height, fill="#000050")
+    #screen = turtle.Screen()
+    #screen.bgcolor('blue')
 
     # x and y will be equal to the mouse pointer's x and y location
-    x = event.x
-    y = event.y
+    x = 100# event.x
+    y = 100# event.y
     z = y + 75
     # This defines the x and y coordinated of all three points
     # of a triangle
@@ -56,6 +59,8 @@ def mouse_pressed(event):
     #    where the mouse is clicked
     
 
-canvas.bind("<Button-1>", mouse_pressed)
+#canvas.bind("<Button-1>", mouse_pressed)
 
-root.mainloop()
+    turtle.done()
+
+#root.mainloop()
